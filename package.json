@@ -29,5 +29,8 @@
     "yarn.lock": [
       "git rm --cached"
     ]
+  },
+  "dependencies": {
+    "chai": "^4.1.2"
   }
 }
