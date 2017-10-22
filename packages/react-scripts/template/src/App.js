@@ -6,6 +6,7 @@ import { Dependencies } from './utils/Dependencies';
 
 class App extends Component {
   displayDependecyOutput() {
+    const finalResults = [];
     const results = new Set(); // ES6, initialize a Set when you hand it an Array.
     // ES6, initialize Data set with Map
     const packagesWithDeps = new Map(
@@ -21,13 +22,14 @@ class App extends Component {
     };
 
     packagesWithDeps.forEach(loopOverPackagesWithDeps);
-    for (let result of results) {
-      return `Dependency: ${result}`;
-    }
-    console.log(results);
+    // for (var result of Object.entries(results)) {
+    //   finalResults.push(() => result);
+    //   console.log(result);
+    //   return `Dependency: ${result}`;
+    // }
+
     return <div>{[...results]}</div>;
   }
-
   render() {
     return (
       <div className="App">

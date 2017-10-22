@@ -1,11 +1,6 @@
 import { expect } from 'chai';
 import { Dependencies } from './utils/Dependencies';
-import { results } from './App';
 
 it('should be an array of dependencies', () => {
-  expect(Dependencies.length === 6).to.be.true;
+  expect(Dependencies.length).to.equal(6);
 });
-
-// it('should be an object with entries', () => {
-//   return;
-// });
